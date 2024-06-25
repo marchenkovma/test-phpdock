@@ -1,11 +1,12 @@
 <?php
 
+use App\Http\Controllers\TasksController;
 use Illuminate\Support\Facades\Route;
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+// Показывает форму
+//Route::get('tasks/create', [TasksController::class, 'create']);
 
-Route::get('/test', function () {
-    return env('APP_URL');
-});
+// Сохраняет данные
+//Route::post('/tasks', [TasksController::class, 'store']);
+
+Route::apiResource('tasks', TasksController::class);

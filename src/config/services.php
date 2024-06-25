@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'test' => [
+        'key' => 'TEST_KEY',
+    ],
+
 ];
